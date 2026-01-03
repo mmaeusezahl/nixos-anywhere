@@ -547,7 +547,7 @@ uploadSshKey() {
       HOME="$sshCopyHome" sshpass -e \
         ssh-copy-id \
         -o ConnectTimeout=10 \
-        -f \ 
+        -f \
         "${sshArgs[@]}" \
         "$sshConnection"
     else
@@ -557,7 +557,7 @@ uploadSshKey() {
       HOME="$sshCopyHome" ssh-copy-id \
         -o IdentitiesOnly=no \
         -o ConnectTimeout=10 \
-        -f \ 
+        -f \
         "${sshArgs[@]}" \
         "$sshConnection"
     fi
